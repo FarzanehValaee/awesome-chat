@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/awesome-chat/static/css/main.a92824f8.css",
+    "main.js": "/awesome-chat/static/js/main.e345fcd2.js",
+    "index.html": "/awesome-chat/index.html",
+    "main.a92824f8.css.map": "/awesome-chat/static/css/main.a92824f8.css.map",
+    "main.e345fcd2.js.map": "/awesome-chat/static/js/main.e345fcd2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a92824f8.css",
+    "static/js/main.e345fcd2.js"
+  ]
+}
