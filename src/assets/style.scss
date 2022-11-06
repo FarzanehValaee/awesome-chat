@@ -13,6 +13,10 @@
             @content;
           }
 }
+body{
+  padding: 0;
+  margin: 0;
+}
         
 .formContainer {
           background-color: #a7bcff;
@@ -93,7 +97,10 @@
           display: flex;
           align-items: center;
           justify-content: center;
-        
+          @include mobile{
+            margin:0;
+            padding:0;
+          }
           .container {
             border: 1px solid white;
             width: 100vw;
@@ -103,11 +110,17 @@
             @include tablet {
              width: 90%;
             }
+            @include mobile{
+              width: 100vw;
+            }
         
             .sidebar {
               flex: 1;
               background-color: #3e3c61;
               position: relative;
+              @include mobile{
+                display:none;
+              }
         
               .navbar {
                 display: flex;
@@ -117,6 +130,7 @@
                 padding: 10px;
                 justify-content: space-between;
                 color: #ddddf7;
+
         
                 .logo {
                   font-weight: bold;
@@ -202,7 +216,6 @@
 }
 .chat {
               flex: 2;
-        
               .chatInfo {
                 height: 50px;
                 background-color: #5d5b8d;
@@ -214,8 +227,11 @@
               }
         
               .chatIcons {
-                display: flex;
+                display: none;
                 gap: 10px;
+                @include mobile{
+                  display: flex;
+                }
         
                 img {
                   height: 24px;
@@ -321,4 +337,4 @@
               }
             }
           }
-}   
+} 

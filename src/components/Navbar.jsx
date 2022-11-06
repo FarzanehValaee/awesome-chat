@@ -5,7 +5,7 @@ import { AuthContext } from '../contex/AuthContext';
 import ProfileModal from '../components/ProfileModal';
 
 
-export default function Navbar() {
+export default function Navbar(props) {
 
   const {currentUser} = useContext(AuthContext);
 
@@ -15,7 +15,6 @@ export default function Navbar() {
                     <div className="user">
                               <img src={currentUser.photoURL} alt="" />
                               <span>
-                                {/* {currentUser.displayName} */}
                                 <ProfileModal 
                                   displayName={currentUser.displayName} 
                                   data={currentUser}
