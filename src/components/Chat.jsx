@@ -21,11 +21,6 @@ export default function Chat() {
             data={data.user}
             />
         </span>
-      <div className="chatIcons">
-            <img src={cam} alt="" />
-            <img src={add} alt="" />
-            <img src={more} alt="" />
-          </div>
       </div>
       <Messages />
       <Input/>

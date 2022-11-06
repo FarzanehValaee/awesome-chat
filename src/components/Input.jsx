@@ -1,6 +1,5 @@
 import React, { useContext, useState} from "react";
 import Img from "../assets/img/img.png";
-import Attach from "../assets/img/attach.png";
 import { AuthContext } from "../contex/AuthContext";
 import { ChatContext } from "../contex/ChatContext";
 import {
@@ -82,7 +81,6 @@ export default function Input() {
         value={text}
       />
       <div className="send">
-        <img src={Attach} alt="" />
         <input
           type="file"
           style={{ display: "none" }}
