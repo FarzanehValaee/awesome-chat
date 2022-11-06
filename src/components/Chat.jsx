@@ -6,6 +6,7 @@ import Messages from './Messages';
 import Input from './Input';
 import { auth } from '../firebase';
 import { ChatContext } from "../contex/ChatContext";
+import ProfileModal from '../components/ProfileModal';
 
 
 export default function Chat() {
@@ -13,12 +14,18 @@ export default function Chat() {
   return (
     <div className="chat">
       <div className="chatInfo">
-        <span>{data.user?.displayName}</span>
-        <div className="chatIcons">
-          <img src={cam} alt="" />
-          <img src={add} alt="" />
-          <img src={more} alt="" />
-        </div>
+        
+        <span>
+         <ProfileModal 
+            displayName={data.user?.displayName} 
+            data={data.user}
+            />
+        </span>
+      <div className="chatIcons">
+            <img src={cam} alt="" />
+            <img src={add} alt="" />
+            <img src={more} alt="" />
+          </div>
       </div>
       <Messages />
       <Input/>
